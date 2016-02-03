@@ -50,8 +50,8 @@ print (otherStudents.substringFromIndex(otherStudents.endIndex.advancedBy(-lastP
 let range = otherStudents.endIndex.advancedBy(-lastPersonLength-2)..<otherStudents.endIndex
 otherStudents.removeRange(range)
 otherStudents += ", " + findFirstname(me.name).uppercaseString
-print ("Other students in my class are " + otherStudents + " was added.")
+print ("Other students in my class are \(otherStudents) was added.")
 
 let namesArray = otherStudents.componentsSeparatedByString(", ")
-print (namesArray[2] + " and " + namesArray[3] + " are in the class")
+print ("\(namesArray[2]) and \(namesArray[3]) are in the class")
 
